@@ -1,0 +1,32 @@
+.label {
+    padding: 4px 12px;
+    border-radius: 10px;
+    background: $color-default;
+    width: auto;
+
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    color: $color-white;
+    text-transform: uppercase;
+}
+
+.label--primary {
+    background: $color-primary;
+}
+
+.label--info {
+    background: $color-info;
+}
+
+.label--success {
+    background: $color-success;
+}
+
+.label--warning {
+    background: $color-warning;
+}
+
+.label--danger {
+    background: $color-danger;
+}

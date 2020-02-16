@@ -1,0 +1,31 @@
+.link {
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: $color-default;
+}
+
+.link--primary {
+    color: $color-primary;
+}
+
+.link--info {
+    color: $color-info;
+}
+
+.link--success {
+    color: $color-success;
+}
+
+.link--warning {
+    color: $color-warning;
+}
+
+.link--danger {
+    color: $color-danger;
+}

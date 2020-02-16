@@ -1,0 +1,9 @@
+.image--raised {
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 6px; }
+
+.image--raised_circle {
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 100px; }
+
+/*# sourceMappingURL=images.css.map */

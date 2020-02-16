@@ -1,0 +1,67 @@
+.radio {
+    opacity: 0;
+    position: absolute;
+}
+
+.radio + label {
+    padding-left: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.radio + label:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    left: 0;
+}
+
+.radio + label:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: $color-primary;
+    left: 2px;
+    top: 1px;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.radio:checked + label:after{
+    opacity: 1;
+    transform: rotate(-45deg) scale(1);
+}
+
+.radio--disabled_unchecked + label:before,
+.radio--disabled_checked + label:before{
+    border: 1px solid rgba(0, 0, 0, 0.26);
+}
+
+.radio--disabled_unchecked + label:after {
+    display: none;
+}
+
+.radio--disabled_checked + label:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: $color-primary;
+    left: 2px;
+    top: 1px;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.radio--disabled_checked:checked + label:after{
+    opacity: 0.5;
+}

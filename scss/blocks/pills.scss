@@ -1,0 +1,62 @@
+.pill {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    text-align: center;
+    text-decoration: none;
+    color: #555555;
+}
+
+.pill:hover {
+    background: $color-primary;
+    box-shadow: 0 4px 20px rgba(156, 39, 176, 0.45);
+    border-radius: 3px;
+
+    color: $color-white;
+}
+
+.pill__dashboard {
+    content: url("../../images/icons/dashboard.svg");
+}
+
+.pill:hover .pill__dashboard {
+    content: url("../../images/icons/dashboard_white.svg");
+    width: 30px;
+    margin: 0 auto;
+}
+
+.pill__schedule {
+    content: url("../../images/icons/schedule__icon__grey.png");
+    width: 30px;
+    margin: 0 auto;
+}
+
+.pill:hover .pill__schedule {
+    content: url("../../images/icons/schedule__icon.svg");
+    width: 30px;
+    margin: 0 auto;
+}
+
+.pill__tasks {
+    content: url("../../images/icons/tasks__icon.svg");
+}
+
+.pill:hover .pill__tasks {
+    content: url("../../images/icons/tasks__icon__white.png");
+    width: 30px;
+    margin: 0 auto;
+}
+
+.pill__payments {
+    content: url("../../images/icons/payments__icon.svg");
+}
+
+.pill:hover .pill__payments {
+    content: url("../../images/icons/payments__icon__white.png");
+    width: 30px;
+    margin: 0 auto;
+}

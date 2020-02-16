@@ -1,0 +1,28 @@
+.alert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 32px;
+}
+
+.alert--info {
+    background: $color-info;
+}
+
+.alert--success {
+    background: $color-success;
+}
+
+.alert--warning {
+    background: $color-warning;
+}
+
+.alert--danger {
+    background: $color-danger;
+}
+
+.alert__holder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

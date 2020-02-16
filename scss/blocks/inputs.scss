@@ -1,0 +1,146 @@
+.input {
+    width: 260px;
+    border: none;
+    border-bottom: 1px solid $color-default;
+    padding: 4px 0;
+    display: block;
+    position: relative;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+
+    @media screen and (max-width: 1500px) {
+
+        .input {
+            margin: 0;
+        }
+
+    }
+}
+
+.input::placeholder {
+    color: $color-default;
+    text-transform: capitalize;
+}
+
+.input--floating {
+    display: block;
+    position: absolute;
+    top: 0;
+    padding: 4px 0 0 0;
+    transition: all 200ms;
+    cursor: text;
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default;
+    text-transform: capitalize;
+}
+
+.input:focus + .input--floating,
+.input:valid + .input--floating {
+    font-size: 12px;
+    transform: translate3d(0, -100%, 0);
+}
+
+.input--success {
+    display: block;
+    position: absolute;
+    top: -18px;
+    padding: 4px 0 0 0;
+    transition: all 20ms;
+
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    color: transparent;
+}
+
+.input:focus + .input--success,
+.input:valid + .input--success {
+    color: $color-success;
+}
+
+.input--success::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    border-bottom: 2px solid $color-success;
+    border-left: 2px solid $color-success;
+    border-radius: 1px;
+
+    right: -180px;
+    bottom: -15px;
+    opacity: 0;
+    transition: all 20ms;
+    transform: rotate(-45deg);
+}
+
+.input:focus + .input--success::after,
+.input:valid + .input--success::after {
+    opacity: 1;
+    color: $color-danger;
+}
+
+.input--error {
+    display: block;
+    position: absolute;
+    top: -18px;
+    padding: 4px 0 0 0;
+    transition: all 20ms;
+
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    color: transparent;
+}
+
+.input:focus + .input--error,
+.input:valid + .input--error {
+    color: $color-danger;
+}
+
+.input--error:before, .input--error:after {
+    position: absolute;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color: $color-danger;
+    opacity: 0;
+    transition: all 20ms;
+    right: -192px;
+    bottom: -22px;
+    border-radius: 1px;
+}
+
+.input--error:before {
+    transform: rotate(45deg);
+}
+
+.input--error:after {
+    transform: rotate(-45deg);
+}
+
+.input:focus + .input--error::before,
+.input:valid + .input--error::before {
+    opacity: 1;
+}
+
+.input:focus + .input--error::after,
+.input:valid + .input--error::after {
+    opacity: 1;
+}
+
+
+
+
+
+

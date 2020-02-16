@@ -1,0 +1,101 @@
+.progress-bar {
+    position: relative;
+    width: 570px;
+    height: 4px;
+
+    @media screen and (max-width: 800px) {
+
+            width: 100%;
+        }
+}
+
+.progress-bar--default {
+    background: rgba(156, 39, 205, 0.2);
+}
+
+.progress-bar--default:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 170px;
+    height: 4px;
+    background: $color-primary;
+
+    @media screen and (max-width: 800px) {
+
+            width: 50%;
+        }
+}
+
+.progress-bar--custom {
+    background: rgba(3, 169, 244, 0.2);
+}
+
+.progress-bar--custom:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 345px;
+    height: 4px;
+    background: $color-info;
+
+    @media screen and (max-width: 800px) {
+
+            width: 50%;
+        }
+}
+
+.progress-bar--multiply {
+    position: relative;
+    background: rgba(244, 67, 54, 0.2);
+}
+
+.progress-bar--multiply:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 4px;
+    background: $color-success;
+
+    @media screen and (max-width: 800px) {
+
+            width: 30%;
+        }
+}
+
+.progress-bar__line {
+    content: "";
+    position: absolute;
+    left: 200px;
+    top: 0;
+    width: 118px;
+    height: 4px;
+    background: $color-warning;
+
+    @media screen and (max-width: 800px) {
+
+            width: 15%;
+            left: 30%;
+        }
+}
+
+.progress-bar--multiply:after {
+    content: "";
+    position: absolute;
+    left: 318px;
+    top: 0;
+    width: 55px;
+    height: 4px;
+    background: $color-danger;
+
+    @media screen and (max-width: 800px) {
+
+            width: 20%;
+            left: 45%;
+        }
+
+    }

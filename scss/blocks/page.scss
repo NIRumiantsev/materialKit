@@ -1,0 +1,293 @@
+.page {
+    background: #E5E5E5;
+    padding-bottom: 30px;
+}
+
+.page__container {
+    width: 1180px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1500px) {
+
+            width: 80%;
+        }
+}
+
+.page__header {
+    margin: 0 0 -40px 0;
+}
+
+.page__main {
+    margin: 0 auto;
+}
+
+.page__button {
+    margin-right: 7px;
+
+    @media screen and (max-width: 1190px) {
+
+            margin-bottom: 14px;
+        }
+}
+
+.page__link {
+    margin-right: 70px;
+
+    @media screen and (max-width: 1190px) {
+
+            margin-right: 0;
+            margin-bottom: 14px;
+        }
+}
+
+.page__input {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 35px;
+
+    @media screen and (max-width: 1190px) {
+
+            width: 80%;
+        }
+}
+
+.page__form {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 1190px) {
+
+            flex-direction: column;
+        }
+}
+
+.page__elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media screen and (max-width: 1190px) {
+
+            flex-wrap: wrap;
+        }
+}
+
+.page__checkboxes {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 1190px) {
+
+            margin: 20px;
+        }
+}
+
+.page__toggle {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.page_toggle-holder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+}
+
+.page__menu-holder {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1500px) {
+
+            flex-direction: column;
+        }
+}
+
+.page__navigation-background {
+    padding-bottom: 240px;
+    background: url("../../images/navigation__background.jpg") no-repeat bottom/cover;
+}
+
+.page__tabs-background {
+    padding-top: 102px;
+    padding-bottom: 66px;
+
+    background: $color-white;
+
+    @media screen and (max-width: 1500px) {
+
+            padding-bottom: 0;
+        }
+}
+
+.page__tabs-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media screen and (max-width: 1500px) {
+
+            flex-direction: column;
+        }
+}
+
+.page__tab-card {
+    width: 570px;
+
+    @media screen and (max-width: 1500px) {
+
+            margin-bottom: 50px;
+        }
+
+    @media screen and (max-width: 800px) {
+
+            width: 100%;
+        }
+
+    }
+
+.page__special-holder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media screen and (max-width: 1500px) {
+
+            flex-direction: column;
+        }
+}
+
+.page__special-card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+
+    @media screen and (max-width: 1190px) {
+
+            width: 100%;
+        }
+}
+
+.page__progress {
+    display: flex;
+    flex-direction: column;
+}
+
+.page__pills {
+    display: flex;
+    flex-direction: column;
+}
+
+.page__pills-container {
+    display: flex;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 1190px) {
+
+            margin-bottom: 28px;
+        }
+
+    @media screen and (max-width: 800px) {
+
+            flex-direction: column;
+        }
+}
+
+.page__pagination {
+    display: flex;
+    flex-direction: column;
+}
+
+.page__labels {
+    display: flex;
+    flex-direction: column;
+}
+
+.page__label {
+    margin-right: 7px;
+
+    @media screen and (max-width: 800px) {
+
+            margin-bottom: 10px;
+        }
+}
+
+.page__labels-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media screen and (max-width: 800px) {
+
+            flex-wrap: wrap;
+        }
+}
+
+.page__typography-holder {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 1190px) {
+
+            flex-wrap: nowrap;
+            height: auto;
+        }
+}
+
+.page__typography-card {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 800px) {
+
+            width: 100%;
+        }
+}
+
+.page__images-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-bottom: 180px;
+
+    @media screen and (max-width: 1190px) {
+
+            flex-wrap: wrap;
+        }
+
+    @media screen and (max-width: 620px) {
+
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.page__images-card {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 1190px) {
+
+            margin: 20px;
+        }
+}
+
+@media screen and (max-width: 1190px) {
+
+    .page__text-sample {
+        width: 70%;
+    }
+}

@@ -1,0 +1,167 @@
+.button {
+    padding: 13px 30px;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $color-default;
+    box-shadow: 0 2px 2px rgba(153, 153, 153, 0.2);
+    border-radius: 3px;
+
+    font-family: Roboto,sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    color: $color-white;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button--default {
+    background: $color-primary;
+    box-shadow: 0 2px 2px rgba(156, 39, 176, 0.2);
+    border-radius: 3px;
+}
+
+.button--default:hover {
+    background: $color-primary-hover;
+}
+
+.button--round {
+    background: $color-primary;
+    box-shadow: 0 2px 2px rgba(156, 39, 176, 0.2);
+    border-radius: 20px;
+}
+
+.button--round:hover {
+    background: $color-primary-hover;
+}
+
+.button--with-icon {
+    background: $color-primary;
+    box-shadow: 0 2px 2px rgba(156, 39, 176, 0.2);
+    border-radius: 20px;
+}
+
+.button--with-icon:hover {
+    background: $color-primary-hover;
+}
+
+
+.button--only-icon {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background: $color-primary;
+    box-shadow: 0 2px 2px rgba(156, 39, 176, 0.2);
+    border-radius: 50%;
+}
+
+.button--only-icon:hover {
+    background: $color-primary-hover;
+}
+
+.button__icon-single {
+    width: 16px;
+    flex-shrink: 0;
+}
+
+.button--x-small {
+    padding: 5px 14px;
+    background: $color-primary;
+    box-shadow: 0 2px 2px rgba(156, 39, 176, 0.2);
+    border-radius: 3px;
+
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.button--x-small:hover {
+    background: $color-primary-hover;
+}
+
+.button--small {
+    padding: 6px 20px;
+    background: $color-primary;
+    box-shadow: 0 2px 2px rgba(156, 39, 176, 0.2);
+    border-radius: 3px;
+
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.button--small:hover {
+    background: $color-primary-hover;
+}
+
+.button--regular {
+    padding: 13px 30px;
+    background: $color-primary;
+    box-shadow: 0 2px 2px rgba(156, 39, 176, 0.2);
+    border-radius: 3px;
+}
+
+.button--regular:hover {
+    background: $color-primary-hover;
+}
+
+.button--large {
+    padding: 18px 36px;
+    background: $color-primary;
+    box-shadow: 0 2px 2px rgba(156, 39, 176, 0.2);
+    border-radius: 3px;
+    line-height: 16px;
+}
+
+.button--large:hover {
+    background: $color-primary-hover;
+}
+
+.button--primary {
+    background-color: $color-primary;
+    box-shadow: 0 2px 2px rgba(156, 39, 180, 0.2);
+}
+
+.button--primary:hover {
+    background: $color-primary-hover;
+}
+
+.button--info {
+    background: $color-info;
+    box-shadow: 0 2px 2px rgba(3, 169, 244, 0.2);
+}
+
+.button--info:hover {
+    background: $color-info-hover;
+}
+
+.button--success {
+    background: $color-success;
+    box-shadow: 0 2px 2px rgba(76, 175, 80, 0.2);
+}
+
+.button--success:hover {
+    background: $color-success-hover;
+}
+
+.button--warning {
+    background: $color-warning;
+    box-shadow: 0 2px 2px rgba(251, 192, 45, 0.2);
+}
+
+.button--warning:hover {
+    background: $color-warning-hover;
+}
+
+.button--danger {
+    background: $color-danger;
+    box-shadow: 0 2px 2px rgba(244, 67, 54, 0.2);
+}
+
+.button--danger:hover {
+    background: $color-danger-hover
+}

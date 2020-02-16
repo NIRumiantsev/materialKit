@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+<div class="page">
+    <header class="header page__header">
+        <div class="page__container">
+            <nav class="navigation">
+                <a href="#" class="logo">
+                    <img src="images/header__logo.png" alt="Creative Tim" class="logo__img">
+                    <p class="text text--logo logo__text w70 ml8">Creative tim</p>
+                </a>
+                <div class="navigation__navbar" id="navigation__navbar">
+                    <span id="navigation__trigger" class="navigation__trigger"></span>
+                    <ul id="navigation__menu" class="navigation__menu">
+                        <li>
+                            <a href="#" class="navigation__link">
+                                <img class="navigation__link-img mr7" src="images/icons/dashboard_white.svg" alt="">
+                                Components
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="navigation__link">
+                                <img class="navigation__link-img mr7" src="images/icons/download_icon.svg" alt="">
+                                Download
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="navigation__link">
+                                <img class="navigation__link-img" src="images/icons/twitter_icon.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="navigation__link">
+                                <img class="navigation__link-img" src="images/icons/facebook_icon.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="navigation__link">
+                                <img class="navigation__link-img" src="images/icons/instagram_icon.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main page__main">
+            <div class="page__container">
+                <h2 class="text text--title">
+                    Basic elements
+                </h2>
+
+                <!--Buttons-->
+
+                    <h3 class="text text--subtitle mb9 mt27">
+                        Buttons
+                    </h3>
+                    <h4 class="text text--property">
+                        Pick your style
+                    </h4>
+                    <div class="main__holder">
+                        <button class="button button--default page__button">
+                            Default
+                        </button>
+                        <button class="button button--round page__button">
+                            Round
+                        </button>
+                        <button class="button button--with-icon page__button">
+                            <img src="images/icons/heart__icon.svg" alt="" class="button__icon mr_4">
+                            With icon
+                        </button>
+                        <button class="button button--only-icon">
+                            <img src="images/icons/heart__icon.svg" alt="" class="button__icon-single">
+                        </button>
+                    </div>
+                    <h4 class="text text--property">
+                        Pick your size
+                    </h4>
+                    <div class="main__holder">
+                        <button class="button button--x-small page__button">
+                            X-small
+                        </button>
+                        <button class="button button--small page__button">
+                            Small
+                        </button>
+                        <button class="button button--regular page__button">
+                            Regular
+                        </button>
+                        <button class="button button--large">
+                            Large
+                        </button>
+                    </div>
+                <h4 class="text text--property">
+                    Pick your color
+                </h4>
+                <div class="main__holder">
+                    <button class="button page__button">
+                        Default
+                    </button>
+                    <button class="button button--primary page__button">
+                        Primary
+                    </button>
+                    <button class="button button--info page__button">
+                        Info
+                    </button>
+                    <button class="button button--success page__button">
+                        Success
+                    </button>
+                    <button class="button button--warning page__button">
+                        Warning
+                    </button>
+                    <button class="button button--danger">
+                        Danger
+                    </button>
+                </div>
+                <h3 class="text text--subtitle mb9">
+                    Links
+                </h3>
+                <div class="main__holder">
+                    <a href="#" class="link page__link">Default</a>
+                    <a href="#" class="link link--primary page__link">Primary</a>
+                    <a href="#" class="link link--info page__link">Info</a>
+                    <a href="#" class="link link--success page__link">Success</a>
+                    <a href="#" class="link link--warning page__link">Warning</a>
+                    <a href="#" class="link link--danger">Danger</a>
+                </div>
+
+                <!--Inputs-->
+
+                <h3 class="text text--subtitle">
+                    Inputs
+                </h3>
+                <form action="" class="page__form">
+                    <div class="page__input ml_0">
+                        <label for="input"></label>
+                        <input class="input" type="text" id="input" placeholder="Regular">
+                    </div>
+                    <div class="page__input" >
+                        <input class="input" type="text" id="input-floating" required>
+                        <label class="input--floating" for="input-floating">With floating label</label>
+                    </div>
+                    <div class="page__input">
+                        <input class="input" type="text" id="input-success" required placeholder="Success">
+                        <label class="input--success" for="input-success">Success input</label>
+                    </div>
+                    <div class="page__input">
+                        <input class="input" type="text" id="input-error" required placeholder="Error">
+                        <label class="input--error" for="input-error">Error input</label>
+                        <label for="input-error" class="input--error__icon"></label>
+                    </div>
+                    <div class="page__input w_244">
+                        <img src="images/icons/material_icon.svg" alt="">
+                        <label for="input-material"></label>
+                        <input class="input ml_10 " type="text" id="input-material" placeholder="With material icons">
+                    </div>
+                    <div class="page__input w_244">
+                        <img src="images/icons/font-awsome__icon.svg" alt="">
+                        <label for="input-awesome"></label>
+                        <input class="input ml_10 " type="text" id="input-awesome" placeholder="With font awesome icons">
+                    </div>
+                </form>
+                <div class="page__elements">
+
+                    <!--Checkboxes-->
+
+                    <form action="" class="page__checkboxes">
+                    <h3 class="text text--subtitle mb_28">Checkboxes</h3>
+                    <div class="mb_10">
+                        <input class="checkbox checkbox--unchecked" type="checkbox" id="checkbox_unchecked">
+                        <label class="text text--checkbox" for="checkbox_unchecked">Unchecked</label>
+                    </div>
+                    <div class="mb_10">
+                        <input class="checkbox checkbox--checked" type="checkbox" id="checkbox_checked">
+                        <label class="text text--checkbox" for="checkbox_checked">Checked</label>
+                    </div>
+                    <div class="mb_10">
+                        <input class="checkbox checkbox--disabled_unchecked" type="checkbox" id="checkbox_disabled-unchecked">
+                        <label class="text text--checkbox" for="checkbox_disabled-unchecked">Disabled unchecked</label>
+                    </div>
+                    <div>
+                        <input class="checkbox checkbox--disabled_checked" type="checkbox" id="checkbox_disabled-checked">
+                        <label class="text text--checkbox" for="checkbox_disabled-checked">Disabled checked</label>
+                    </div>
+                </form>
+                    <form action="" class="page__checkboxes">
+
+                        <!--Radio buttons-->
+
+                        <h3 class="text text--subtitle mb_28">Radio buttons</h3>
+                        <div class="mb_10">
+                            <input class="radio radio--unchecked" type="radio" id="radio_unchecked">
+                            <label class="text text--checkbox" for="radio_unchecked">Unchecked</label>
+                        </div>
+                        <div class="mb_10">
+                            <input class="radio radio--checked" type="radio" id="radio_checked">
+                            <label class="text text--checkbox" for="radio_checked">Checked</label>
+                        </div>
+                        <div class="mb_10">
+                            <input class="radio radio--disabled_unchecked" type="radio" id="radio_disabled-unchecked">
+                            <label class="text text--checkbox" for="radio_disabled-unchecked">Disabled unchecked</label>
+                        </div>
+                        <div>
+                            <input class="radio radio--disabled_checked" type="radio" id="radio_disabled-checked">
+                            <label class="text text--checkbox" for="radio_disabled-checked">Disabled checked</label>
+                        </div>
+                    </form>
+                    <form action="" class="page__checkboxes">
+
+                        <!--Toggle buttons-->
+
+                        <h3 class="text text--subtitle mb_28">Toggle buttons</h3>
+                        <div class="page_toggle-holder">
+                            <div>
+                                <label class="toggle page__toggle">
+                                    <input type="checkbox" id="toggle_checked">
+                                    <span class="toggle__button"></span>
+                                </label>
+                            </div>
+                            <p class="text text--checkbox ml_10">Toggle is on</p>
+                        </div>
+                        <div class="page_toggle-holder mt_8">
+                            <div>
+                                <label class="toggle page__toggle">
+                                    <input type="checkbox" id="toggle_unchecked">
+                                    <span class="toggle__button"></span>
+                                </label>
+                            </div>
+                            <p class="text text--checkbox ml_10">Toggle is off</p>
+                        </div>
+                    </form>
+                </div>
+
+                <!--Menu-->
+
+                <div class="page__menu-holder mt_116">
+                    <div>
+                        <h3 class="text text--subtitle mb_28">Menu</h3>
+                        <div class="menu">
+                            <p class="text text--menu_title">Menu</p>
+                            <div class="menu__container" id="menu__container">
+                                <span id="menu__trigger" class="navigation__trigger"></span>
+                                <ul class="menu__navbar" id="menu__navbar">
+                                    <li><a href="#" class="menu__link ml_16">Link</a></li>
+                                    <li><a href="#" class="menu__link">Link</a></li>
+                                    <li>
+                                        <div class="menu__dropdown">
+                                            <label for="dropdown"></label>
+                                            <select name="dropdown" id="dropdown">
+                                                <option class="text text--dropdown" value="1">Dropdown</option>
+                                                <option class="text text--dropdown" value="2">Dropdown</option>
+                                                <option class="text text--dropdown" value="3">Dropdown</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text text--subtitle mb_28">Menu with icons</h3>
+                        <div class="menu menu--with_icons">
+                            <p class="text text--menu_title">Icons</p>
+                            <div class="menu__container" id="menu__container-icons">
+                                <span id="menu__trigger-icons" class="navigation__trigger"></span>
+                                <ul class="menu__navbar" id="menu__navbar-icons">
+                                    <li>
+                                        <a href="#" class="menu__link ml_16">
+                                            <img src="images/icons/mail__icon.svg" alt="Сообщения">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu__link">
+                                            <img src="images/icons/face__icon.svg" alt="Профиль">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="menu__dropdown ">
+                                            <label for="icon_dropdown"></label>
+                                            <select name="icon_dropdown" id="icon_dropdown" size="1">
+                                                <option class="menu__dropdown-icon" value="1"></option>
+                                                <option class="menu__dropdown-icon" value="2"></option>
+                                                <option class="menu__dropdown-icon" value="3"></option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Navigation-->
+
+                <h3 class="text text--subtitle mb_28 mt_50">Navigation</h3>
+            </div>
+            <div class="page__navigation-background mb_22">
+                <div class="navigation navigation--primary mb_22">
+                    <div class="navigation__container">
+                        <p class="text text--navigation_title">Primary color</p>
+                        <div class="navigation__navbar" id="navigation__navbar-primary">
+                            <span id="navigation__trigger-primary" class="navigation__trigger"></span>
+                            <ul id="navigation__menu-primary" class="navigation__menu">
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        <img class="mr7" src="images/icons/discover__icon.svg" alt="Discover">
+                                        Discover
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        <img class="mr7" src="images/icons/profile__icon.svg" alt="Profile">
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        <img class="mr7" src="images/icons/settings__icon.svg" alt="Settings">
+                                        Settings
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation navigation--info mb_22">
+                    <div class="navigation__container">
+                        <p class="text text--navigation_title">Info color</p>
+                        <div class="navigation__navbar" id="navigation__navbar-info">
+                            <span id="navigation__trigger-info" class="navigation__trigger"></span>
+                            <ul class="navigation__menu" id="navigation__menu-info">
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        Discover
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        Settings
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation navigation--success mb_22">
+                    <div class="navigation__container">
+                        <p class="text text--navigation_title">Success color</p>
+                        <div class="navigation__navbar" id="navigation__navbar-success">
+                            <span id="navigation__trigger-success" class="navigation__trigger"></span>
+                            <ul class="navigation__menu" id="navigation__menu-success">
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        <img  src="images/icons/discover__icon.svg" alt="Discover">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        <img  src="images/icons/profile__icon.svg" alt="Profile">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        <img  src="images/icons/settings__icon.svg" alt="Settings">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation navigation--warning mb_22">
+                    <div class="navigation__container">
+                        <p class="text text--navigation_title">Warning color</p>
+                        <div class="navigation__navbar" id="navigation__navbar-warning">
+                            <span id="navigation__trigger-warning" class="navigation__trigger"></span>
+                            <ul class="navigation__menu" id="navigation__menu-warning">
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        <img  src="images/icons/facebook_icon.svg" alt="Discover">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        <img  src="images/icons/twitter_icon.svg" alt="Profile">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        <img  src="images/icons/google+__icon.svg" alt="Settings">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        <img  src="images/icons/instagram_icon.svg" alt="Settings">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation navigation--danger mb_40">
+                    <div class="navigation__container">
+                        <p class="text text--navigation_title">Danger color</p>
+                        <div class="navigation__navbar" id="navigation__navbar-danger">
+                            <span id="navigation__trigger-danger" class="navigation__trigger"></span>
+                            <ul class="navigation__menu" id="navigation__menu-danger">
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        <img class="mr7" src="images/icons/facebook_icon.svg" alt="Discover">
+                                        Share
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        <img class="mr7" src="images/icons/twitter_icon.svg" alt="Profile">
+                                        Tweet
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navigation__link">
+                                        <img class="mr7" src="images/icons/pin__icon.svg" alt="Settings">
+                                        Pin
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    <div class="navigation">
+                        <div class="navigation__container">
+                            <p class="text text--navigation_title">Transparent</p>
+                            <div class="navigation__navbar" id="navigation__navbar-transparent">
+                                <span id="navigation__trigger-transparent" class="navigation__trigger"></span>
+                                <ul class="navigation__menu" id="navigation__menu-transparent">
+                                    <li>
+                                        <a href="#" class="navigation__link">
+                                            <img class="mr7" src="images/icons/facebook_icon.svg" alt="Discover">
+                                            Facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="navigation__link">
+                                            <img class="mr7" src="images/icons/twitter_icon.svg" alt="Profile">
+                                            Tweeter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="navigation__link">
+                                            <img class="mr7" src="images/icons/instagram_icon.svg" alt="Settings">
+                                            Instagram
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        <!-- Tabs -->
+
+            <div class="page__tabs-background">
+                <div class="page__container">
+                    <div class="page__tabs-holder">
+                        <div class="page__tab-card">
+                            <h3 class="text text--subtitle mb_70 mt_0">Tabs with icons on card</h3>
+                            <div class="tab tab--card">
+                                <div class="tab__menu tab--menu_with_icons">
+                                    <div class="tab__link tab--link_with_icon">
+                                        <img class="mr7" src="images/icons/face__icon.svg" alt="Profile">
+                                        Profile
+                                    </div>
+                                    <div class="tab__link tab--link_with_icon">
+                                        <img class="mr7" src="images/icons/messages__icon.svg" alt="Profile">
+                                        Messages
+                                    </div>
+                                    <div class="tab__link tab--link_with_icon">
+                                        <img class="mr7" src="images/icons/settings__icon(2).svg" alt="Profile">
+                                        Settings
+                                    </div>
+                                </div>
+                                <p class="text text--tab">
+                                    I will be the leader of a company that ends up being worth billions of dollars,
+                                    because I got the answers. I understand culture. I am the nucleus.
+                                    I think that’s a responsibility that I have, to push possibilities,
+                                    to show people, this is the level that things could be at.
+                                    I think that’s a responsibility that I have, to push possibilities, to show people,
+                                    this is the level that things could be at.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="page__tab-card">
+                            <h3 class="text text--subtitle mb_70 mt_0">Tabs on plain card</h3>
+                            <div class="tab">
+                                <div class="tab__menu tab--menu_plain_card">
+                                    <div class="tab__link">
+                                        Home
+                                    </div>
+                                    <div class="tab__link">
+                                        Updates
+                                    </div>
+                                    <div class="tab__link">
+                                        History
+                                    </div>
+                                </div>
+                                <p class="text text--tab">
+                                    I will be the leader of a company that ends up being worth billions of dollars,
+                                    because I got the answers. I understand culture. I am the nucleus.
+                                    I think that’s a responsibility that I have, to push possibilities,
+                                    to show people, this is the level that things could be at.
+                                    I think that’s a responsibility that I have, to push possibilities, to show people,
+                                    this is the level that things could be at.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__container ">
+                <div class="page__special-holder mt_108 mb_164">
+                    <div class="page__special-card">
+
+                        <!--Progress bars-->
+
+                        <div class="page__progress mb_70">
+                            <h3 class="text text--subtitle mb_28 mt_0">Progress bars</h3>
+                            <div class="progress-bar progress-bar--default mb_22"></div>
+                            <div class="progress-bar progress-bar--custom mb_22"></div>
+                            <div class="progress-bar progress-bar--multiply">
+                                <div class="progress-bar__line"></div>
+                            </div>
+                        </div>
+
+                        <!--Navigation pills-->
+
+                        <div class="page__pills">
+                            <h3 class="text text--subtitle mb_28 mt_0">Navigation pills</h3>
+                            <div class="page__pills-container">
+                                <a href="#" class="pill">
+                                    <div class="pill__dashboard"></div>
+                                    <p class="text text--pill mb_0">Dashboard</p>
+                                </a>
+                                <a href="#" class="pill">
+                                    <div class="pill__schedule"></div>
+                                    <p class="text text--pill mb_0">Schedule</p>
+                                </a>
+                                <a href="#" class="pill">
+                                    <div class="pill__tasks"></div>
+                                    <p class="text text--pill mb_0">Tasks</p>
+                                </a>
+                                <a href="#" class="pill">
+                                    <div class="pill__payments"></div>
+                                    <p class="text text--pill mb_0">Payments</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__special-card">
+
+                        <!--Pagination-->
+
+                        <div class="page__pagination">
+                            <h3 class="text text--subtitle mb_28 mt_0">Pagination</h3>
+                        </div>
+
+                        <!--Labels-->
+
+                        <div class="page__labels">
+                            <h3 class="text text--subtitle mb_28 mt_0">Labels</h3>
+                            <div class="page__labels-container">
+                                <div class="label page__label">
+                                    Default
+                                </div>
+                                <div class="label label--primary page__label">
+                                    Primary
+                                </div>
+                                <div class="label label--info page__label">
+                                    Info
+                                </div>
+                                <div class="label label--success page__label">
+                                    Success
+                                </div>
+                                <div class="label label--warning page__label">
+                                    Warning
+                                </div>
+                                <div class="label label--danger page__label">
+                                    Danger
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text text--subtitle mb_28 mt_0">Notifications</h3>
+            </div>
+
+        <!--Notifications-->
+
+        <div class="alert alert--info mb_22">
+            <div class="alert__holder">
+                <img class="mr_14" src="images/icons/info__icon.png" alt="Info">
+                <p class="text text--alert">INFO ALERT: You've got some friends nearby, stop looking at your phone and find them...</p>
+            </div>
+            <a href="">
+                <img src="images/icons/clear__icon.svg" alt="">
+            </a>
+        </div>
+        <div class="alert alert--success mb_22">
+            <div class="alert__holder">
+                <img class="mr_14" src="images/icons/success__icon__white.svg" alt="Success">
+                <p class="text text--alert">SUCCESS ALERT: Yuhuuu! You've got your $11.99 album from The Weeknd</p>
+            </div>
+            <a href="#">
+                <img src="images/icons/clear__icon.svg" alt="">
+            </a>
+        </div>
+        <div class="alert alert--warning mb_22">
+            <div class="alert__holder">
+                <img class="mr_14" src="images/icons/warning__icon.png" alt="">
+                <p class="text text--alert">WARNING ALERT: Hey, it looks like you still have the "copyright © 2015" in your footer. Please update it!</p>
+            </div>
+            <a href="#">
+                <img src="images/icons/clear__icon.svg" alt="">
+            </a>
+        </div>
+        <div class="alert alert--danger mb_130">
+            <div class="alert__holder">
+                <img class="mr_14" src="images/icons/info__icon.png" alt="">
+                <p class="text text--alert">ERROR ALERT: Damn man! You screwed up the server this time. You should find a good excuse for your Boss...</p>
+            </div>
+            <a href="">
+                <img src="images/icons/clear__icon.svg" alt="">
+            </a>
+        </div>
+        <div class="page__container">
+
+            <!--Typography-->
+
+            <h2 class="text text--title">
+                Typography
+            </h2>
+            <div class="page__typography-holder mt_40 h_70">
+                <p class="text text--typography">Header1</p>
+                <h1 class="text text--header1">The Life of Material Kit</h1>
+            </div>
+            <div class="page__typography-holder h_50">
+                <p class="text text--typography">Header2</p>
+                <h2 class="text text--header2">The Life of Material Kit</h2>
+            </div>
+            <div class="page__typography-holder h_35">
+                <p class="text text--typography">Header3</p>
+                <h3 class="text text--header3">The Life of Material Kit</h3>
+            </div>
+            <div class="page__typography-holder h_24">
+                <p class="text text--typography">Header4</p>
+                <h4 class="text text--header4">The Life of Material Kit</h4>
+            </div>
+            <div class="page__typography-holder h_24">
+                <p class="text text--typography">Header4</p>
+                <h5 class="text text--header5">The Life of Material Kit</h5>
+            </div>
+            <div class="page__typography-holder h_18">
+                <p class="text text--typography">Header4</p>
+                <h6 class="text text--header6">The Life of Material Kit</h6>
+            </div>
+            <div class="page__typography-holder h_40">
+                <p class="text text--typography">Paragraph</p>
+                <p class="text text--paragraph text__paragraph">I will be the leader of a company that ends up being worth billions of dollars,
+                    because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that
+                    I have, to push possibilities, to show people, this is the level that things could be at.</p>
+            </div>
+            <div class="page__typography-holder h_114">
+                <p class="text text--typography">Quote</p>
+
+                <div class="text__quote-holder">
+                    <p class="text text--quote ">
+                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers.
+                        I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities,
+                        to show people, this is the level that things could be at.</p>
+                    <p class="text text--sign">
+                        &#8212; Kanye West, Musician</p>
+                </div>
+            </div>
+            <div class="page__typography-holder h_18">
+                <p class="text text--typography">Muted text</p>
+                <p class="text text--muted page__text-sample">I will be the leader of a company that ends up being worth billions of dollars,
+                    because I got the answers...</p>
+            </div>
+            <div class="page__typography-holder h_18">
+                <p class="text text--typography">Primary text</p>
+                <p class="text text--primary page__text-sample">I will be the leader of a company that ends up being worth billions of dollars,
+                    because I got the answers...</p>
+            </div>
+            <div class="page__typography-holder h_18">
+                <p class="text text--typography">Info text</p>
+                <p class="text text--info page__text-sample">I will be the leader of a company that ends up being worth billions of dollars,
+                    because I got the answers...</p>
+            </div>
+            <div class="page__typography-holder h_18">
+                <p class="text text--typography">Success text</p>
+                <p class="text text--success page__text-sample">I will be the leader of a company that ends up being worth billions of dollars,
+                    because I got the answers...</p>
+            </div>
+            <div class="page__typography-holder h_18">
+                <p class="text text--typography">Warning text</p>
+                <p class="text text--warning page__text-sample">I will be the leader of a company that ends up being worth billions of dollars,
+                    because I got the answers...</p>
+            </div>
+            <div class="page__typography-holder h_18">
+                <p class="text text--typography">Danger text</p>
+                <p class="text text--danger page__text-sample">I will be the leader of a company that ends up being worth billions of dollars,
+                    because I got the answers...</p>
+            </div>
+            <div class="page__typography-holder h_18">
+                <p class="text text--typography">Danger text</p>
+                <p class="text text--danger page__text-sample">I will be the leader of a company that ends up being worth billions of dollars,
+                    because I got the answers...</p>
+            </div>
+            <div class="page__typography-holder h_18">
+                <p class="text text--typography">Danger text</p>
+                <p class="text text--danger page__text-sample">I will be the leader of a company that ends up being worth billions of dollars,
+                    because I got the answers...</p>
+            </div>
+            <div class="page__typography-holder h_90 ">
+                <p class="text text--typography">Small tag</p>
+                <div class="page__typography-card w_470">
+                    <h3 class="text text--header3">Header with small subtitle</h3>
+                    <p class="text text--tag">Use “small” tags for the headers</p>
+                </div>
+
+            </div>
+
+        <!--Images-->
+
+            <h2 class="text text--title">
+                Images
+            </h2>
+            <div class="page__images-holder">
+                <div class="page__images-card">
+                    <p class="text text--image_title">Rounded image</p>
+                    <img src="images/rounded__image.png" alt="Rounded">
+                </div>
+                <div class="page__images-card">
+                    <p class="text text--image_title">Circle image</p>
+                    <img src="images/circle__image.png" alt="Circle">
+                </div>
+                <div class="page__images-card">
+                    <p class="text text--image_title">Rounded Raised image</p>
+                    <img class="image--raised" src="images/rounded__image.png" alt="Rounded Raised">
+                </div>
+                <div class="page__images-card">
+                    <p class="text text--image_title">Circle Raised image</p>
+                    <img class="image--raised_circle" src="images/circle__image.png" alt="Circle Raised">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="page__container">
+            <div class="navigation navigation--footer mt_40">
+                <div class="navigation__navbar">
+                    <a class="text text--footer_link" href="#">Creative tim</a>
+                    <a class="text text--footer_link" href="#">About us</a>
+                    <a class="text text--footer_link" href="#">Blog</a>
+                    <a class="text text--footer_link mr_0" href="#">Liceness</a>
+                </div>
+                <p class="text text--footer">&#169; 2017, made with &#9829; by Creative Tim for a better web.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/hamburger__navigation.js"></script>
+</body>
+</html>

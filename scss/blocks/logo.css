@@ -1,0 +1,17 @@
+.logo {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0; }
+
+.logo__img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  flex-shrink: 0; }
+
+.logo__text {
+  float: none;
+  display: inline-block;
+  vertical-align: middle; }
+
+/*# sourceMappingURL=logo.css.map */
